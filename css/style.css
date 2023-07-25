@@ -422,8 +422,7 @@ span {
     grid-template-columns: 1fr;
   }
   .about-img {
-    text-align: center;
-    order: 2;
+    display: none;
   }
   .about-img img {
     max-width: 100%;
