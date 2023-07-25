@@ -12,8 +12,8 @@
 :root {
   --bg-color: #191919;
   --second-bg-color: #101010;
-  --main-color: #e9204f;
-  --text-color: #fff;
+  --main-color: #0d9752;
+  --text-color: #ffffff;
   --second-color: #e4e4e4;
   --other-color: #c6c9d8bf;
   --h1-font: 7rem;
@@ -69,7 +69,8 @@ section {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background: url(../img/background.jpg);
+
+  background: url("https://drive.google.com/uc?export=view&id=1o21tzaUvlTWc3MPSaTXaEWrojUe-3rVp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -109,7 +110,7 @@ section {
   transition: all ease 0.5s;
 }
 .btn:hover {
-  transform: translateX(5px);
+  transform: translateY(-5px);
   background: transparent;
   border: 2px solid var(--main-color);
 }
@@ -148,8 +149,76 @@ span {
   line-height: 30px;
   margin-bottom: 3rem;
 }
-.service {
+.works {
   background: var(--second-bg-color);
+}
+.works-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 2.2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+.works .btn{
+  display: block;
+  text-align: center;
+  margin-top: 20px; /* Adjust the top margin to add space between the works-box and "View All" link */
+  text-decoration: none;
+
+}
+.works-box {
+  padding: 45px 30px;
+  background: var(--bg-color);
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.works-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.works i {
+  font-size: 50px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+.works h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.works p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+  margin-bottom: 1.5rem;
+}
+.s-btnn {
+  display: inline-block;
+  padding: 9px 24px;
+  background: var(--main-color);
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid var(--main-color);
+  border-radius: 2rem;
+  transition: all ease 0.5s;
+}
+
+.s-btnn:hover {
+  transform: scale(1.1);
+  background: transparent;
+  border: 2px solid var(--main-color);
+}
+.works-box:hover {
+  transform: translateY(-8px);
+  border: 1px solid #4e5055;
+}
+.service {
+  background: var(--bg-color);
 }
 .text-center {
   text-align: center;
@@ -174,7 +243,7 @@ span {
 }
 .service-box {
   padding: 45px 30px;
-  background: var(--bg-color);
+  background: var(--second-bg-color);
   border-radius: 0.8rem;
   border: 1px solid transparent;
   cursor: pointer;
@@ -218,10 +287,15 @@ span {
   border: 1px solid #4e5055;
 }
 .contact {
+  background: var(--second-bg-color);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   align-items: center;
   gap: 5rem;
+}
+.contact a{
+  color: inherit;
+  text-decoration: none;
 }
 .left-contact {
   display: flex;
@@ -274,7 +348,7 @@ span {
 }
 .end-section {
   padding: 80px 19% 70px;
-  background-color: var(--second-bg-color);
+
   display: flex;
   align-items: center;
   flex-direction: column;
